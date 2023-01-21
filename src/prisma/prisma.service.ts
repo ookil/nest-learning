@@ -4,7 +4,7 @@ import { PrismaClient } from '@prisma/client';
 
 @Injectable()
 export class PrismaService extends PrismaClient implements OnModuleInit {
-  // this is not necessary, prisma gets the url from Prisma Client? 
+  // this is not necessary, prisma gets the url from Prisma Client?
   constructor(config: ConfigService) {
     super({
       datasources: {
